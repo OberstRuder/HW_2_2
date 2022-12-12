@@ -40,6 +40,7 @@ namespace HW_2_2
             {
                 Console.WriteLine(_cartList[i]);
             }
+            Console.WriteLine();
         }
     }
 }

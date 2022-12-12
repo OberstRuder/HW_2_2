@@ -10,6 +10,7 @@ namespace HW_2_2
     {
         public static void OrderProcess()
         {
+            Console.WriteLine();
             Console.WriteLine("You order:");
             Console.WriteLine("Order number: " + OrderNumber());
             Cart.CartReader();

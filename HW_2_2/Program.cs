@@ -8,7 +8,6 @@
             Goods.GoodList();
             Console.WriteLine("Select products by entering numbers separated by space (max 10)");
             Cart.CartReader();
-            Console.WriteLine("Your cart:");
             Customers.NewCustomer();
             Order.OrderProcess();
         }

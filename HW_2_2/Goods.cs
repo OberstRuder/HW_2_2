@@ -22,6 +22,7 @@ namespace HW_2_2
                 _goodsList[i] = (i+1).ToString()+ "\t" + GoodType() + "\t" + GoodCollor() + "\t" + GoodSize();
                 Console.WriteLine(_goodsList[i]);
             }
+            Console.WriteLine();
 
         }
 
