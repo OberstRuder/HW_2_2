@@ -12,15 +12,17 @@ namespace HW_2_2
 
         private static Random _random;
 
-        public static string[] GoodList()
+        public static string[] _goodsList = new string[20];
+
+        public static void GoodList()
         {
-            string[] result = new string[20];
-            for (int i = 0; i < result.Length; i++)
+
+            for (int i = 0; i < _goodsList.Length; i++)
             {
-                result[i] = (i+1).ToString()+ "\t" + GoodType() + "\t" + GoodCollor() + "\t" + GoodSize();
-                Console.WriteLine(result[i]);
+                _goodsList[i] = (i+1).ToString()+ "\t" + GoodType() + "\t" + GoodCollor() + "\t" + GoodSize();
+                Console.WriteLine(_goodsList[i]);
             }
-            return result;
+
         }
 
         private static string GoodType()

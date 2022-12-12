@@ -8,5 +8,9 @@ namespace HW_2_2
 {
     internal class Order
     {
+        public static string Order()
+        {
+
+        }
     }
 }
