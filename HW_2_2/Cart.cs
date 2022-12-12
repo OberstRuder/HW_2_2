@@ -9,7 +9,8 @@ namespace HW_2_2
 {
     internal class Cart
     {
-        public static int[] StringRead()
+        private static string[] _cartList = GoodsInCart();
+        private static int[] StringRead()
         {
             string reader = Console.ReadLine();
             string[] textNumbers = reader.Split(' ');
@@ -17,12 +18,11 @@ namespace HW_2_2
             for (int i = 0; i < textNumbers.Length; i++)
             {
                 numbers[i] = int.Parse(textNumbers[i]) - 1;
-
             }
             return numbers;
         }
 
-        public static string[] GoodsInCart() 
+        private static string[] GoodsInCart() 
         {
             int[] numbers = StringRead();
             string[] result = new string[numbers.Length];
@@ -30,9 +30,16 @@ namespace HW_2_2
             for (int i = 0; i < numbers.Length; i++)
             {
                 result[i] = Goods._goodsList[numbers[i]];
-                Console.WriteLine(result[i]);
             }
             return result;
+        }
+
+        public static void CartReader()
+        {
+            for (int i = 0; i < _cartList.Length; i++)
+            {
+                Console.WriteLine(_cartList[i]);
+            }
         }
     }
 }
